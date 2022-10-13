@@ -4,7 +4,7 @@ Very small lib for calling a JSON-RPC server. I kept copy pasting this code so I
 
 ## Usage
 
-```
+```go
 package main
 
 import (
