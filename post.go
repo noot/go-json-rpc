@@ -63,7 +63,7 @@ func PostRPC(endpoint, method, params string) (*Response, error) {
 
 	var sv *Response
 	if err = json.Unmarshal(body, &sv); err != nil {
-		return nil, err
+		return nil, fmt.Errorf("failed to unmarshal server response: %w", err)
 	}
 
 	return sv, nil
